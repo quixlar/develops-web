@@ -1,0 +1,108 @@
+
+body{
+    background-color:#308f3d;
+    background-image: ();
+    width: 100%;
+}
+    h1{
+color: #750a6c;
+font-size: 3em;
+padding: none;
+margin: auto;
+
+    
+    
+}
+.nav-header{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-radius: .5em;
+    overflow: hidden;
+    background-color: #ff0c0ce5;
+    text-align: center;
+    border:#7c7676 solid 1px;
+}
+nav li{
+    float: left;
+    font-size: 1.15em;
+    line-height: 2.5em;
+    height: 2.5;
+    border-bottom: 0.0625em;
+}
+nav a{
+    color: rgb(250, 250, 250);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    padding: 0;
+    font-weight: bold;
+    width: 8em;
+}
+ .form-control{
+   
+    background-color: rgb(15, 206, 206);
+    padding: 0.55em;
+    font-size: 1.15em;
+    font-family: Arial, Helvetica, sans-serif;
+    border:#b8afaf solid 1px;
+    margin: 1.4%;
+    margin-left: 25%;
+    margin-right: 25%; 
+}
+@viewport{
+    width: device-width;
+    zoom: 1;
+}
+#label {
+    font-size: 1em;
+    padding: 0;
+    margin: .9em;
+    width: 100%;
+    text-align: center;
+}
+#label2{
+    color: #620eeb;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .75em;
+    padding: 1.5em;
+}
+#input{
+    font-size: .75em;
+    background-color: rgb(252, 249, 249);
+    stroke-width: .5em;
+    border: .05em solid rgb(150, 140, 140);
+    border-radius: .4em;
+    padding: .25em;
+    width: 20em;
+    height: 1.75em;
+    margin: .9em;
+}
+h2{
+    text-align: center; 
+    font-size: 1.85em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #750a6c;
+}
+#box {
+    width: 1.2em;
+    padding: .625em;
+    border: .3125em }
+textarea{
+      margin: 1.3em;
+      width: 50em;
+      height: 10em;
+    }
+ #submit{
+    color: (154, 240, 240);
+    font-size: 1.3em;
+    border: .05em color(154, 240, 240);
+    border-radius: .2em;
+    padding: .15em;
+    height: 1.6em;
+    margin: .3em;
+    width: 4em;
+    }
+
+

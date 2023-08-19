@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial scale=1">
+        <title>Daktari Hospital</title>
+      
+        <link href="css/form.css" rel="stylesheet">
+    
+    </head>    
+        <body>
+            <header class="header">
+                <!-- Heading-->
+                <h1>Daktari Hospital</h1>
+                Welcome to future of healthcare. Get complete medical checkup
+            </header>
+
+        <nav> <!-- start of navigation bar--> 
+            <ul class="nav-header">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Register</a></li>
+            </ul>
+        </nav>
+         <!--start of the Survey form-->
+         <form action="data.php" method="get" id="Survey Form">
+            <div class="form-control">
+                <h2>Patient Admission Form</h2>
+            <label for="name" id="label">Full Name</label>
+            <br>
+            <input type="text" name="first-name" value="" id="input" placeholder="First Name">
+            <input type="text" name="last-name" value="" id="input" placeholder="Last Name">
+            <br>
+            <label for="phone" id="label">Phone Number</label>
+            <br>
+            <input type="number" name="phone-number" value="" id="input" placeholder="Phone No.">
+            <br>
+            <label for="email" id="label">Email Address</label>
+            <br>
+            <input type="text" name="email" value="" id="input" placeholder="Email">
+            <br>
+            <label for="address" id="label">Address</label>
+            <br>
+            <input type="text" name="address" value="" id="input" placeholder=" Address">
+            <br>
+            <label for="dob" id="label">Date of Birth</label>
+            <br>
+            <input type="text" id="input" name="dob" value="" placeholder="DD/MM/YYYY" >
+            <br>
+            <label for="gender" id="label">Gender</label>
+            <label for="male" id="label2">Male</label>
+            <input type="radio" name="radiobutton" id ="box" value="male">
+            <label for="female" id="label2">Female</label>
+            <input type="radio" name="radiobutton" id ="box" value="femmale">
+            <br>
+            <br>
+            <label for="age" id="label">Age</label>
+            <br>
+             <select name="age-bracket" id="input">
+                <br>
+                <option value="1">0-1 yrs</option>
+                <option value="1">1-5 yrs</option>
+                <option value="1">5-12 yrs</option>
+                <option value="1">12-18 yrs</option>
+                <option value="1">above 18 yrs</option>
+             </select>
+             <br>
+            <label for="occupation" id="label">Occupation</label>
+            <br>
+            <input type="text" name="occupation" value="" id="input" placeholder="">
+            <br>
+            <label for="blood-group" id="label">Blood Group</label>
+            <br>
+            <input type="text" name="blood-group" value="" placeholder="" id="input">
+            <br>
+            <label for="medication" id="label">Are you taking any medication?</label>
+            <br>
+            <label for="yes" id="label2">Yes</label>
+            <input type="radio" name="radiobutton1" id ="box"value="yes">
+            <label for="no" id="label2">No</label>
+            <input type="radio" name="radiobutton1" id ="box" value="no">
+            <br>
+            <label for="allergies" id="label">Do you have any allergies?</label>
+            <br>
+            <label for="yes" id="label2">Yes</label>
+            <input type="radio" name="radiobutton2" id ="box" value="yes">
+            <label for="no" id="label2">No</label>
+            <input type="radio" name="radiobutton2" id ="box" value="no">
+            <br>
+            <label for="tobacco" id="label">Do you use tobacco in any form?</label>
+            <br>
+            <label for="yes" id="label2">Yes</label>
+            <input type="radio" name="radiobutton3" id ="box" value="yes">
+            <label for="no" id="label2">No</label>
+            <input type="radio" name="radiobutton3" id ="box" value="no">
+            <br>
+            <label for="alcohol" id="label">Do you use alcohol in any form?</label>
+            <br>
+            <label for="yes" id="label2">Yes</label>
+            <input type="radio" name="radiobutton4" id ="box" value="yes">
+            <label for="no" id="label2">No</label>
+            <input type="radio" name="radiobutton4" id ="box" value="no">
+            <br>
+            <br>
+            <label for="AI" id="label">Additional information</label>
+            <br>
+            <textarea name="AI" rows="10" cols="100">Additional Information</textarea>
+            <br>
+            <input type="checkbox" name="checkbutton" id= "checkbox" value="terms">
+            <label for="terms" id="label" style="font-size:.75em; color: #5702f5; font-family: Georgia">Agree to terms and conditions</label>
+            <br>
+            <input type="submit" value="Submit" id="submit">
+            </div>
+             <!--end of the Survey form-->
+
+         </form>
+    </body>
+
+
+</html>
