@@ -1,19 +1,19 @@
 body{
     
     width: 100%;
-    background-color: (156, 152,165) ;
+    background-color: aliceblue;
+    background-image: src="CSS/pic2.png";
 }
+/*Navigation bar styling*/
 .nav{
+    border-bottom: 8px  solid rgba(240, 224, 224, 0.664);
     display: flex;
     width: 100%;
-    background-color:rgba(171, 243, 243, 0.664);
+    background-color:azure;
 }
-h1{
-    color: blueviolet;
-    font-size: 36px;
-}
+
 .list{
-    margin: auto;
+    margin: 30px;
     list-style: none;
     float: right;
     width: 100%;
@@ -21,73 +21,192 @@ h1{
     height: 70px;
 }
 .list li a{
-    color: rgb(156, 152,165);
-    margin-top:20px;
+    color: blueviolet;
     padding: 40px;
     font-family: Verdana;
     font-size: 20px;
     list-style: none;
     font-weight: bold;  
     text-decoration: none;
-    width: auto; 
 }
-#btn{
+
+/*Start of styling top Login and signup buttons*/
+.login-btn{
+    border-radius: 4px;
+    border: 1px solid aliceblue;
+    height: 38px;
+    margin: 23px;
+    margin-left: -5px;
+    font-size: 14px;
+    font-family: Verdana;
+    font-weight: bold;
+    color: azure;
+    cursor: pointer;
+    background-color: rgb(11, 136, 245);
+}
+.signup-btn{
+    border: 1px solid azure;
+    border-radius: 4px;
+    margin: 23px;
+    height: 38px;
+    width: 100px;
+    margin-left: 5px;
+    font-size: 14px;
+    font-family: Verdana;
+    font-weight: bold;
+    color: azure;
+    cursor: pointer;
+    background-color: rgb(10, 134, 243);
+}
+/*End of styling top Login and signup buttons*/
+
+/*Login input start*/
+#id-No, #pswr{
+    border-radius: 4px;
+    border: 1px solid rgba(87, 114, 114, 0.664);
+    height: 30px;
+    margin: 25px;
+    margin-left: 5px;
+    font-family: Verdana;
+    color: rgb(156, 152,165);
+    background-color: aliceblue;
+}
+/*Login input End*/
+
+/*book now button*/
+
+.bookbtn{
+    background-color: #daeeda;
+    padding: 50px;
+    padding-left: 355px;
+}
+#bookbtn{
+    color: azure;
     font-size: 24px;
-    font-family: 'sans-serif';
-    background-color: rgb(255, 29, 37);
+    font-weight: bold;
+    font-family:'Arial Narrow Bold', sans-serif;
+    background-color: blueviolet;
     border: none;
     border-radius: 3px;
+    cursor: pointer;
     width: 150px;
     height: 40px;
 }
-.para{
-    display: block;
-}
+/*End of styling booknow button*/
+
+/*Start of wrapped header and paragraph*/
 .wrapper{
-background-color: aliceblue;
-display: flex;
-}
-.sign-popup{
-    display: none;
-    position: fixed;
-    bottom: 70%;
-    left: 50%;
-    border: 4px solid#343;
-    z-index: 9;
-}
-.signup{
-    max-width: 500px;
-    padding: 10px;
     background-color: aliceblue;
-    height: auto;
+    display: flex;
+    }
+h1{
+    color: blueviolet;
+    font-size: 45px;
 }
+.para{
+    background-color:azure;
+    display: inline-block;
+    font-family: Tahoma, sans-serif;
+    font-size: 18px;
+    align-items: center;
+    padding: 40px;
+
+}
+.wrapper2{
+    float: center;
+    height: 500px;
+    display: flex;
+    justify-items: right;
+}
+
+/*start of signup form*/
+.open-signup{
+    display: ;
+    position: fixed;
+    bottom: 5%;
+    left: 10%;
+    top: 5%;
+    
+}
+#Sign{
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: bold;
+}
+.Signup{
+    position: center;
+    min-width: 150px;
+    padding-left: 200px;
+    padding-right: 100px;
+    background-color: rgb(70, 112, 150);
+    
+}
+.Signup input, select{
+    width: auto;
+    padding: 5px;
+    margin: 5px 0 5px 0;
+    border: 1px solid rgb(113, 117, 113);
+    border-radius: 4px;
+    background: azure;
+    align-content: center;
+}
+.Signup label{
+    display: block;
+    margin: 5px 0 5px 0;
+    color:aliceblue;
+    font-size: 18px;
+}
+.Signup .btn {
+    background-color: #138fc0;
+    color:azure;
+    padding: 8px 10px;
+    border: 1px solid green;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 50%;
+    margin-bottom:10px;
+}
+.Signup .btn-cancel {
+    background-color: #db196a;
+    color:azure;
+    padding: 8px 10px;
+    border: 1px solid green;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 50%;
+    margin-bottom:10px;
+}
+/*End of Signup form styling*/
+
+/* styling images*/
 .image {
-   float: left;
-   width: 100%;
+   float: right;
    height: 500px;
    display: flex;
+   display: inline flex;
    justify-content: right;
-   justify-items: righ;
-   margin-right: 500px;
+   justify-items: right;
 }
+
+/* Footer */
 .footer,.footer1, .footer2{
     list-style: none;
+    margin: 55px;
 }
 .footer  li a,.footer1 li a, .footer2 li a{
-    padding-left: 50px;
-    padding-right: 100px;
-    margin: 5px;
-    display: flex;
-    color: rgb(152, 7, 209);
+    width: 100%;
+    font-size: 20px;
+    padding: 50px;
+    margin: 55px;
+    color: blueviolet;
     text-decoration: none;
     align-content: center;
 }
 footer{
-    width: auto;
+    width: 100%;
+    height: 300px;
     justify-content: center;
-    padding: 0px;
-    margin: 5%;
     display: flex;
-    background-color: rgb(215, 201, 228);
+    background-color:rgba(240, 224, 224);
 }
 
