@@ -5,8 +5,7 @@
     h1{
         color: #e60cd3;
         font-size: 3em;
-        padding: none;
-        margin: auto;
+        padding-top:  10px;
     }
 .nav-header{
     list-style-type: none;
@@ -66,7 +65,7 @@ nav a{
     font-size: .75em;
     background-color: rgb(252, 249, 249);
     stroke-width: .5em;
-    border: .05em solid rgb(150, 140, 140);
+    border: .05em solid rgb(202, 189, 189);
     border-radius: .4em;
     padding: .25em;
     width: 30%;

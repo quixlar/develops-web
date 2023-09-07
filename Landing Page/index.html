@@ -4,29 +4,101 @@
         <title>My first tittle</title>
         <meta charset="utf-8">  
         <link rel="stylesheet" href="CSS/style.css">
+        <link rel="javascript" href="java.js">
     </head>
     
     <body>
-        <header class="header">
-         <h1>Dactari Hospital</h1>
+        <header class="nav">
+         <h1>Daktari Hospital</h1>
           <ul class="list">
             <li><a href="#">Home</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">login</a></li>
+            <li><a href="#">log In</a></li>
+            <div class="navsignLogin"></div>
+          <label type="label" name="Id-no" id="id-no">ID Number</label>
+          <input type="number" name="id-no" id="id-No" placeholder="National ID">
+          <label type="label" name="Password" id="id-no">Password</label>
+          <input type="password" name="Password" id="password">
+            <button class="open-form" onclick="getlogin()">Login Up</button>
+            <button class="open-form" onclick="openForm()">Sign Up</button>
+          </div>
           </ul>
-        </div>
-      </header>
+        </header>
+        <div class="login-form">
+        <form class="login">
+          <h3>LOG IN</h3>
+          <label type="label" name="Id-no" id="id-no">ID Number</label>
+          <input type="number" name="id-no" id="id-No" placeholder="National ID">
+          <label type="label" name="Password" id="id-no">Password</label>
+          <input type="password" name="Password" id="password">
+          <input type="submit" value="Log In" id="login">
+        </form>
+      </div>
+        <div class="sign-popup" id="signup">
+        <form class="signup">
+          <h3>SIGN UP</h3>
+          <label type="label" name="first-name">First name</label>
+          <input type="text" name="first-name" id="first-name" placeholder="First Name">
+          <label type="label" name="second-name">Second name</label>
+          <input type="text" name="second-name" id="second-name" placeholder="Seconf Name">
+          <label type="label" name="gender">Gender</label>
+          <select name="selgender">
+            <option>Select your Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+          <label type="label" name="phone-no">Phone Number</label>
+          <input type="number" name="phone-no" id="phone-no" placeholder="Phone No.">
+          <label type="label" name="email">Email Number</label>
+          <input type="email" name="email" id="email" placeholder="email">
+          <label type="label" name="dob">Date of Birth</label>
+          <input type="date" name="dob" id="dob">
+          <label type="label" name="Id-no" id="id-no">ID Number</label>
+          <input type="number" name="id-no" id="id-No" placeholder="National ID">
+          <label type="label" name="Password" id="id-no">New Password</label>
+          <input type="password" name="Password" id="password">
+          <label type="label" name="Password" id="id-no">Repeat Password</label>
+          <input type="password" name="Password" id="password">
+          <button type="button" class="btn">Login</button>
+          <button type="button" class="btn-cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+      <div class="wrapper">
+        <div class="para">
         <p>Welcome to the top world class hospital<br> 
-          our staff and doctors are highly professional.<br>
+          our staff and doctors are highly professionals in their mandate.<br>
           Book now
           for consultion and check up. Get a specialist now.
         </p>
-        <div class="buttons">
-        <button  type="button" name="book now" id="btn" onclick href="">BOOK NOW </button>
+        <a href="form.html"><input type="submit" value="book now" id="btn"></input></a> 
       </div>
           <div class="image">
             <img src="CSS/image.jpg">
-          
+          </div>  
+      </div> 
+          <footer>
+            <ul class="footer">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Departments</a></li>
+              <li><a href="#">Book Clinic</a></li>
+            </ul>
+            <ul class="footer1">
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Nutrition Health</a></li>
+              <li><a href="#">Branches</a></li>
+              <li><a href="#">Staff</a></li>
+            </ul>
+            <ul class="footer2">
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">user agreement</a></li>
+              <li><a href="#">Privacy setting</a></li>
+              <li><a href="#">Feedback</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </footer>
      </body>
 </html>
