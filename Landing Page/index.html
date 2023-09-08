@@ -5,16 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landing Page</title>
+  <script src="java.js"></script>
   <link rel="stylesheet" href="CSS/style.css">
 </head> 
     <body>
-        <header class="nav">
+      <!-- start of navigation bar--> 
+        <header class="nav-container">
           <ul class="list">
             <li><a href="#">Home</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Emergency</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Ambulance</a></li>
+            <li><a href="#">Admission</a></li>
             <div class="navsignLogin"></div>
           <input type="email" name="id-no" id="id-No" placeholder="Login Email">
           <input type="password" name="Password" id="pswr" placeholder="Login Password">
@@ -23,9 +25,55 @@
           </div>
           </ul>
         </header>
+        
+      <div class="wrapper">
+        <div class="para">
+          <h1>Daktari Hospital</h1>
+        <p>Welcome to the top world class hospital<br> 
+          our staff and doctors are highly professionals in their mandate.<br>
+          Book now
+          for consultion and check up.<br> Get a specialist now.
+        </p>
+        <div class="bookbtn">
+          <button type="button" id="bookbtn" onclick="">Book Now</button> 
+          <button type="button" id="emergbtn" onclick="" style="background-color: red;">Emergency</button> 
+        </div>
+      </div>
+          <div class="image">
+            <img src="CSS/pic1.jpg">
+            <img src="CSS/pic3.jpg">
+          </div>  
+      </div>
+      <div class="wrapper2">  
+      </div>
+      <!--start of the Footer-->
+          <footer>
+            <ul class="footer">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Departments</a></li>
+              <li><a href="#">Book Clinic</a></li>
+            </ul>
+            <ul class="footer1">
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Community Health</a></li>
+              <li><a href="#">Branches</a></li>
+              <li><a href="#">Staff</a></li>
+            </ul>
+            <ul class="footer2">
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">user agreement</a></li>
+              <li><a href="#">Privacy setting</a></li>
+              <li><a href="#">Feedback</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </footer>
+          <!--start of the Signup form-->
         <div class="open-signup" id="signup">
-        <form class="Signup">
-          <label type="label" id="Sign">SIGN UP FORM</label>
+          <form class="Signup" action="data.php" method="get" id="Survey Form">
+          <label type="label" id="Sign">Fill all the Details</label>
           <label type="label" name="first-name">First name</label>
           <input type="text" name="first-name" id="first-name" placeholder="First Name">
           <label type="label" name="second-name">Last name</label>
@@ -48,52 +96,10 @@
           <input type="password" name="Password" id="password">
           <label type="label" name="Password" id="passrep">Repeat Password</label>
           <input type="password" name="Password" id="password">
-          <button type="button" class="btn">Sign Up</button>
+          <input type="submit" class="btn" value="Submit" id="submit">
           <button type="button" class="btn-cancel" onclick="closeForm()">Close</button>
         </form>
+        <!--end of the Signup form-->
       </div>
-      <div class="wrapper">
-        <div class="para">
-          <h1>Daktari Hospital</h1>
-        <p>Welcome to the top world class hospital<br> 
-          our staff and doctors are highly professionals in their mandate.<br>
-          Book now
-          for consultion and check up.<br> Get a specialist now.
-        </p>
-        <div class="bookbtn">
-        <a href="form.html"><input type="submit" value="book now" id="bookbtn"></input></a> 
-      </div>
-      </div>
-          <div class="image">
-            <img src="CSS/pic1.jpg">
-            <img src="CSS/pic3.jpg">
-          </div>  
-      </div> 
-      <div class="wrapper2">
-           
-      </div>
-          <footer>
-            <ul class="footer">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Departments</a></li>
-              <li><a href="#">Book Clinic</a></li>
-            </ul>
-            <ul class="footer1">
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Nutrition Health</a></li>
-              <li><a href="#">Branches</a></li>
-              <li><a href="#">Staff</a></li>
-            </ul>
-            <ul class="footer2">
-              <li><a href="#">Terms</a></li>
-              <li><a href="#">user agreement</a></li>
-              <li><a href="#">Privacy setting</a></li>
-              <li><a href="#">Feedback</a></li>
-              <li><a href="#">FAQs</a></li>
-            </ul>
-          </footer>
      </body>
 </html>
