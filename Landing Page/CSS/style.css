@@ -10,7 +10,7 @@ body{
     border: 1px rgb(240, 255, 255);
     display: flex;
     width: 100%;
-    box-shadow: 0 4px 4px 0 rgba(58, 79, 90, 0.5);
+    box-shadow: 0 1px 4px 0 rgba(58, 79, 90, 0.5);
     background-color:azure;
 }
 
@@ -26,7 +26,7 @@ body{
 .list li a{
     padding-top: 30px;
     color:#3d6d70;
-    padding: 40px;
+    margin: 20px;
     font-family: Verdana;
     font-size: 20px;
     list-style: none;
@@ -35,12 +35,16 @@ body{
 }
 
 /*Start of styling top Login and signup buttons*/
+.navsignLogin{
+    background-color: #5ffff9;
+    display: inline-block;
+}
 .login-btn{
     border-radius: 4px;
     border: 1px solid aliceblue;
-    height: 38px;
-    margin: 23px;
-    margin-left: -5px;
+    height: 39px;
+    margin: 38px;
+    margin-left: -10px;
     font-size: 14px;
     font-family: Verdana;
     font-weight: bold;
@@ -51,10 +55,9 @@ body{
 .signup-btn{
     border: 1px solid azure;
     border-radius: 4px;
-    margin: 23px;
-    height: 38px;
-    width: 100px;
-    margin-left: 5px;
+    margin: 38px;
+    height: 39px;
+    width: 150px;
     font-size: 14px;
     font-family: Verdana;
     font-weight: bold;
@@ -69,7 +72,7 @@ body{
     border-radius: 4px;
     border: 1px solid #38f9;
     height: 32px;
-    margin: 25px;
+    margin: 40px;
     margin-left: 5px;
     font-family: Verdana;
     color: #00f;
@@ -110,23 +113,66 @@ body{
     }
 h1{
     color:red;
-    font-size: 45px;
+    font-size: 35px;
+    font-family: serif;
 }
 .para{
     background-color:azure;
     display: inline-block;
     font-family: Tahoma, sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     align-items: center;
     padding: 40px;
 
 }
-.wrapper2{
-    background-color: #5ffff9;
-    height: 500px;
+.container {
+    height: 400px;
     display: flex;
-}
+    align-items: center; 
+    justify-content: center; 
+  }
+  
+  .wrapper-2 {
+    height: 100%;
+    width: 100%; 
+    padding: 20px; 
+    display: flex;
+    justify-content: space-around; 
+    align-items: flex-start; 
+  }
+  
+  .wrapper1,.wrapper2,.wrapper3,.wrapper4 {
+    flex: 1; 
+    padding: 20px; 
+    text-align: center; 
+    color: #000; 
+  }
+  .wrapper2 ul li a{
+    text-decoration: none;
 
+  }
+  .wrapper2 ul li{
+    list-style: none;
+
+  }
+  
+  .wrapper2 h3,.wrapper3 h3,.wrapper4 h3 {
+    color: #000; 
+    align-items: center;
+  
+  }
+  
+  .wrapper3 {
+    border-radius: 8px;
+    display: inline-table;
+  }
+  
+  .wrapper3 #img, #img1 {
+    max-width: 50%;
+    height: 100px;
+    flex-wrap: wrap;
+  }
+  
 /*start of signup form*/
 .open-signup{
     display: none;
@@ -134,7 +180,7 @@ h1{
     bottom: 5%;
     left: 80%;
     top: 5%;
-    background-color: rgba(122, 61, 122, 0.486);
+    background-color: rgba(47, 152, 184);
     border-radius: 8px;
     padding-top: 30px;
     
@@ -205,7 +251,7 @@ h1{
 }
 .footer  li a,.footer1 li a, .footer2 li a{
     width: 100%;
-    font-size: 20px;
+    font-size: 17px;
     padding: 50px;
     margin: 55px;
     color: azure;
@@ -217,6 +263,6 @@ footer{
     height: 300px;
     justify-content: center;
     display: flex;
-    background-color:#0f85f9;
+    background-color:#1e3349;
 }
 

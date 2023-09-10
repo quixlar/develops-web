@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landing Page</title>
-  <script src="java.js"></script>
+  <script src="Jscript.js"></script>
   <link rel="stylesheet" href="CSS/style.css">
 </head> 
     <body>
@@ -17,22 +17,25 @@
             <li><a href="#">About</a></li>
             <li><a href="#">Ambulance</a></li>
             <li><a href="#">Admission</a></li>
+          </ul>
             <div class="navsignLogin"></div>
           <input type="email" name="id-no" id="id-No" placeholder="Login Email">
           <input type="password" name="Password" id="pswr" placeholder="Login Password">
             <button class="login-btn" onclick="getlogin()">Login</button>
             <button class="signup-btn" onclick="openForm()">Sign Up</button>
           </div>
-          </ul>
+          <hr>
         </header>
-        
       <div class="wrapper">
         <div class="para">
           <h1>Daktari Hospital</h1>
-        <p>Welcome to the top world class hospital<br> 
-          our staff and doctors are highly professionals in their mandate.<br>
-          Book now
-          for consultion and check up.<br> Get a specialist now.
+        <p>Welcome to a world-class hospital, where excellence is the standard.
+           We have a dedicated team of highly skilled doctors and staff with high
+            expertees in their relevant fields, ensuring that you receive the best care possible.
+            Whether you need a consultation, a check-up, or require the expertise
+             of a specialist, we are here to serve you. Book your appointment now
+             to experience the pinnacle of healthcare services. Your health and 
+             well-being are our top priorities.
         </p>
         <div class="bookbtn">
           <button type="button" id="bookbtn" onclick="">Book Now</button> 
@@ -44,8 +47,42 @@
             <img src="CSS/pic3.jpg">
           </div>  
       </div>
-      <div class="wrapper2">  
+      <div class="container">
+        <div class="wrapper-2">
+          <div class="wrapper1">
+            <h2>Welcome to Daktari Hospital</h2>
+            <p>At Daktari Hospital, we are committed to providing top-quality healthcare services to our patients. Our experienced team of doctors and staff is here to serve you.</p>
+          </div>
+          <div class="wrapper2">
+            <h3>Our Services</h3>
+            <ul>
+              <li><a href="" >Medicine</a></li>
+              <li><a href="" >Surgery</a></li>
+              <li><a href="" >Pediatrics</a></li>
+              <li><a href="" >Dental clinic</a></li>
+            </ul>
+          </div>
+          <div class="wrapper3">
+            <h3>Meet Our Doctors</h3>
+            <img id="img" src="CSS/doctor1.jpg" alt="Doctor Dancan">
+            <h4>Dr. Dancan(Cardiology)</h4>
+            <img id="img" src="CSS/doctor3.jpg" alt="Doctor Dancan">
+            <h4>Dr. Smith(Pediatrics)</h4>
+          </div>
+          <div class="wrapper4">
+            <h3>Contact Us</h3>
+            <p>If you have any questions or would like to schedule an appointment, please don't hesitate to get in touch with us:</p>
+            <address>
+              <p><strong>Daktari Hospital</strong></p>
+              <p>kenyatta avenue</p>
+              <p>Nairobi, Kenya</p>
+              <p>Email: info@daktarihospital.com</p>
+              <p>Phone: +25472339801</p>
+            </address>
+          </div>
+        </div>
       </div>
+      
       <!--start of the Footer-->
           <footer>
             <ul class="footer">
@@ -72,31 +109,31 @@
           </footer>
           <!--start of the Signup form-->
         <div class="open-signup" id="signup">
-          <form class="Signup" action="data.php" method="get" id="Survey Form">
-          <label type="label" id="Sign">Fill all the Details</label>
-          <label type="label" name="first-name">First name</label>
-          <input type="text" name="first-name" id="first-name" placeholder="First Name">
-          <label type="label" name="second-name">Last name</label>
-          <input type="text" name="last-name" id="last-name" placeholder="Last Name">
-          <label type="label" name="gender">Gender</label>
-          <select name="selgender">
-            <option>Select your Gender</option>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-          </select>
-          <label type="label" name="phone-no">Phone Number</label>
-          <input type="number" name="phone-no" id="phone-no" placeholder="Phone No.">
-          <label type="label" name="email">Email Number</label>
-          <input type="email" name="email" id="email" placeholder="email">
-          <label type="label" name="dob">Date of Birth</label>
-          <input type="date" name="dob" id="dob">
-          <label type="label" name="Id-no" id="id">ID Number</label>
-          <input type="number" name="id-no" id="idno" placeholder="National ID">
-          <label type="label" name="Password" id="passnew">New Password</label>
-          <input type="password" name="Password" id="password">
-          <label type="label" name="Password" id="passrep">Repeat Password</label>
-          <input type="password" name="Password" id="password">
-          <input type="submit" class="btn" value="Submit" id="submit">
+          <form class="Signup" action="data.php" method="post" id="SurveyForm">
+            <label for="Sign">Fill all the Details</label>
+            <label for="first-name">First name</label>
+            <input type="text" name="fname" id="first-name" placeholder="First Name">
+            <label for="last-name">Last name</label>
+            <input type="text" name="lname" id="last-name" placeholder="Last Name">
+            <label for="selgender">Gender</label>
+            <select name="selgender" id="selgender">
+                <option value="">Select your Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <label for="phone-no">Phone Number</label>
+            <input type="tel" name="phone" id="phone-no" placeholder="Phone No.">
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="Email">
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob">
+            <label for="idno">ID Number</label>
+            <input type="text" name="id" id="idno" placeholder="National ID">
+            <label for="password">New Password</label>
+            <input type="password" name="password" id="password">
+            <label for="password-repeat">Repeat Password</label>
+            <input type="password" name="password-repeat" id="password-repeat">
+            <input type="submit" class="btn" value="Sign Up" id="submit">
           <button type="button" class="btn-cancel" onclick="closeForm()">Close</button>
         </form>
         <!--end of the Signup form-->
