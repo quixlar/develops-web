@@ -25,7 +25,7 @@ body{
 }
 .list li a{
     padding-top: 30px;
-    color:#3d6d70;
+    color:gray;
     margin: 20px;
     font-family: Verdana;
     font-size: 20px;
@@ -102,9 +102,8 @@ body{
     height: 40px;
 
 }
-/*End of styling booknow button*/
 
-/*Start of wrapped header and paragraph*/
+/*Start of heading paragraph*/
 .wrapper{
     background-color: aliceblue;
     display: flex;
@@ -112,15 +111,21 @@ body{
     margin-top: 10px;
     }
 h1{
-    color:red;
+    color:#ff03d9;
     font-size: 35px;
-    font-family: serif;
+    font-family: Tahoma, Verdana, sans-serif;
+}
+h2{
+    color:#ff03d9;
+    font-size: 25px;
+    font-family: Tahoma;
 }
 .para{
+    color: gray;
     background-color:azure;
     display: inline-block;
-    font-family: Tahoma, sans-serif;
-    font-size: 15px;
+    font-family:sans-serif;
+    font-size: 17px;
    text-align: center;
     padding: 40px;
 
@@ -145,10 +150,11 @@ h1{
     flex: 1; 
     padding: 20px; 
     text-align: center; 
-    color: #000; 
+    color: gray; 
   }
   .wrapper2 ul li a{
     text-decoration: none;
+    color: gray;
 
   }
   .wrapper2 ul li{
@@ -156,8 +162,8 @@ h1{
 
   }
   
-  .wrapper2 h3,.wrapper3 h3,.wrapper4 h3 {
-    color: #000; 
+  .wrapper2 h3,.wrapper4 h3, .wrapper3 h3 {
+    color: #45ff; 
     align-items: center;
   
   }
@@ -254,15 +260,15 @@ h1{
     font-size: 17px;
     padding: 50px;
     margin: 55px;
-    color: azure;
+    color: gray;
     text-decoration: none;
     align-content: center;
 }
 footer{
     width: 100%;
-    height: 300px;
+    height: 200px;
     justify-content: center;
     display: flex;
-    background-color:#1e3349;
+    background-color:thistle ;
 }
 
